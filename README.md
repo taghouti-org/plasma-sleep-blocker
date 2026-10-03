@@ -1,4 +1,4 @@
-# Sleep Blocker for KDE Plasma
+# Sleep Blocker for KDE Plasma 5 & 6
 
 A panel widget that blocks or allows system sleep with one click, and shows whether sleep is currently blocked.
 
@@ -47,7 +47,7 @@ The block is **off after a reboot**, so the machine never stays awake by acciden
 
 ## Requirements
 
-- KDE Plasma 5 (tested on Plasma 5.27, Kubuntu 24.04). Plasma 6 isn't supported yet.
+- KDE Plasma 6 (tested on Plasma 6.6, Kubuntu 26.04) or Plasma 5 (tested on Plasma 5.27, Kubuntu 24.04). The installer detects which one you have.
 - systemd and polkit
 - An icon theme with `caffeine-cup-full` / `caffeine-cup-empty` (Papirus, Breeze and most popular themes have them)
 
@@ -65,7 +65,7 @@ The block is **off after a reboot**, so the machine never stays awake by acciden
 
 ```bash
 nosleep off
-kpackagetool5 -t Plasma/Applet -r org.taghouti.nosleep
+kpackagetool6 -t Plasma/Applet -r org.taghouti.nosleep   # kpackagetool5 on Plasma 5
 sudo rm /etc/systemd/system/nosleep.service /etc/polkit-1/rules.d/20-nosleep.rules
 sudo systemctl daemon-reload
 rm -rf ~/.local/bin/nosleep ~/.local/src/plasma-nosleep
