@@ -18,7 +18,7 @@ The block is moved out of Plasma into a tiny root systemd service:
 ## Quick Install
 
 ```bash
-curl -L https://gist.github.com/taghouttarek/GIST_ID/raw/install-sleep-blocker.sh | bash
+curl -L https://gist.github.com/taghouttarek/d6559e8bae5cb2c2ffd9773b0eaf9e5a/raw/install-sleep-blocker.sh | bash
 ```
 
 It asks for your password once (sudo) to install the service and the polkit rule. Then add the widget: right-click the panel → **Add Widgets…** → search **"Sleep Blocker"**.
