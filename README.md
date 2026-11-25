@@ -78,3 +78,7 @@ Remove the widget from the panel first if it's there.
 1. Clicking the widget runs `systemctl start|stop nosleep.service`; the polkit rule approves it without a password for your active local session.
 2. The service runs `systemd-inhibit` as root with a `sleep:idle` block lock. logind refuses suspend/hibernate requests from your session while a block lock from another user (root) exists, so Plasma's idle timer, lid action and Sleep button can't put the machine to sleep.
 3. The widget polls `systemctl is-active nosleep.service` every 5 seconds to show the real state, so it's correct again right after a Plasma restart.
+
+---
+
+First published as a [gist](https://gist.github.com/taghouttarek/d6559e8bae5cb2c2ffd9773b0eaf9e5a).
