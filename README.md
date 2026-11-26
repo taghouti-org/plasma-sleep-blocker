@@ -2,6 +2,10 @@
 
 A panel widget that blocks or allows system sleep with one click, and shows whether sleep is currently blocked.
 
+![The widget icon in its two states: an empty cup when sleep is allowed, a steaming cup when sleep is blocked](docs/screenshots/widget-states.png)
+
+*Sleep allowed (left) and sleep blocked (right), shown with the Tela icon theme.*
+
 ## Problem
 
 Plasma's built-in "Manually block sleep and screen locking" option (in the battery widget) is held by the `plasmashell` process. If Plasma crashes or restarts, the block is silently released and comes back **off**, so the laptop goes to sleep on the idle timer even though you turned the block on.
